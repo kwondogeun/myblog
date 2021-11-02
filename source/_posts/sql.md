@@ -3,7 +3,7 @@ title: sql
 date: 2021-11-02 13:07:29
 tags: sql
 ---
-
+````
 --테이블 삭제
 DROP TABLE EMPLOYEE;
 DROP TABLE DEPARTMENT;

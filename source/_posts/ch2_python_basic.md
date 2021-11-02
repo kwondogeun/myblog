@@ -1,137 +1,12 @@
----
-title: temp1028
-date: 2021-10-28 14:22:21
-tags: python
----
+## Hello World
 
-2021년 10월 28일 시작.
 
-## 개요
--블로그 만들기 
-
-## 프로그램 설치
--node.js 설치
-+ URL:https://nodejs.org/ko/
-
-- git 설치
-+ URL:https://git-scm.com/
-
--깃허브 회원가입
-+ URL:https://github.com/
-
--pycharm 설치
-+ URL:https://www.jetbrains.com/ko-kr/pycharm/
-
-## 깃허브 파일생성
-
-1. 로그인 후 your repositories 클릭
-2. New
-3. Repository name(파일명과 동일하게)
-4. Create repository
-5. Code 클릭후 https 복사
-6. 바탕화면 우클릭 Git bash 실행
-7. ~$git clone 붙여넣기
-8. 파일생성완료
-
-## Repo 만들기
-- 블로그 운영을 위한 Repo 2개의 파일(버전관리,배포용)이 필요하다.
-
-hexo 설치 
 ```python
-~$ npm install -g hexo-cli
+print("Hello, world!")
 ```
 
-- 파일 명은 버전: ex)myblog 배포용: 본인이름.github.io 두 개의 파일 깃허브생성
-
-```python
-
-- ~$ hexo init myblog
-- ~$ cd myblog
-- ~$ npm install
-- ~$ npm install hexo-server --save
-- ~$ npm install hexo-deployer-git --save
-```
-config.yml 파일 설정
-```python
-
-title: 제목을 지어주세요
-author: YourName
-url: https://본인이름.github.io
-```
-```python
-#Deployment -- _config.yml 내용 수정
-  - deploy:
-  - type: git
-  - repo: https://github.com/kwondogeun/kwondogeun.github.io.git
-  - branch: main
-```
-```python
-~$ hexo generate --버전
-```
-```python
- ~$ hexo server를 통해 localhost:4000으로 화면확인
-```
-```python
-~$ hexo deploy --배포
-```
-
-## 블로그 파일 만들기
-```python
--~$ hexo new 파일명
-```
-
-## 용어정리
-```python
- ~$ git add . 
- ~$ git commit -m "updated" 
- ~$ git push 
-```
-## 테마 변경(예시)
-```python
- ~$ npm install -S hexo-theme-icarus --이카루스테마
- ```
-- _config.yml에서```theme:icarus```--로 수정
-  
-에러생성 (?) 
-```python
-~$ npm install --save bulma-stylus@0.8.0 hexo-renderer-inferno@^0.1.3 
-```
-을추가하라고 문구나옴
-
-- 에러문구 메세지입력하면 적용
-
-## 이미지 추가(예시)
-- source하위 폴더에 images폴더 생성
-
-![](/images/dog.jpg)
-
-##배포할때 명령필수-> 
-```python
-$hexo generate 
-$hexo deploy
-```
-##블로그 만들기 (참고자료)
-https://ppoffice.github.io/hexo-theme-icarus/uncategorized/getting-started-with-icarus/#install-npm
-
-##블로그 세팅하기 (참고자료)
-https://dschloe.github.io/settings/
-
-##나의 깃허브 링크
-https://github.com/kwondogeun/kwondogeun.github.io/
-
-##빅데이터 공모전 링크
-https://bigdata.seoul.go.kr/noti/selectNoti.do?r_id=P440&bbs_seq=429&sch_type=&sch_text=&currentPage=1
-
-##빅데이터 자격증 관련 링크
-https://dataq.or.kr/www/main.do
-
-## 파이썬
-2021-11-01 파이썬 수업
-
-1. google colab 검색해서 이용(깃허브 연동가능)
-2. 크롬 로그인해서 이용할것.
-
-##예시
+    Hello, world!
+    
 
 ## 주석처리
 
@@ -146,17 +21,9 @@ print("Hello, world!")
 
     Hello, world!
     
-## Hello World
 
-
-```python
-print("Hello, world!")
-```
-
-    Hello, world!
-    
 ## 변수의 종류
-- int,float,bool,none
+
 
 
 ```python
@@ -193,7 +60,12 @@ print(type(none_x))
 
     <class 'NoneType'>
     
-## 사칙연산
+
+## 사칙 연산
+
+
+
+
 
 ```python
 a = 3
@@ -236,6 +108,8 @@ print('c ** d =', c**d)
     c // d = 1.0
     c % d = 1.0
     c ** d = 9.0
+    
+
 ## 논리형 연산자
 
 
@@ -412,7 +286,8 @@ greeting[13]
     
 
     IndexError: string index out of range
-존재하지않은 값을 넣게되면 오류 발생
+
+
 ## 리스트
 
 
@@ -833,7 +708,7 @@ print(t1*3)
 ```
 
 ## 딕셔너리
---value 값을 지정해주는것
+
 
 
 ```python
@@ -1293,9 +1168,7 @@ for i in range(10000):
     Hello World
     Hello World
     Hello World
-    Hello Wo
     Hello World
-    Hello W
     Hello World
     Hello World
     Hello World
@@ -4959,9 +4832,1096 @@ for i in range(10000):
     Hello World
     Hello World
     Hello World
-    Hello
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    Hello World
+    
 
-  
+
 ```python
 a = "Kaggle"
 
@@ -4993,6 +5953,3 @@ for index, value in enumerate(alphabets):
     1 B
     2 C
     
-
-
-# 참고용URL:https://docs.python.org/3/tutorial/datastructures.html
