@@ -1013,23 +1013,7 @@ else:
 ## 반복문
 
 
-```python
-print("Hello World")
-```
 
-    Hello World
-    
-
-
-```python
-print("Hello World")
-print("Hello World")
-print("Hello World")
-```
-
-    Hello World
-    Hello World
-    Hello World
     
 
 
@@ -1042,12 +1026,8 @@ print("Hello World")
 for i in range(10000):
   print("Hello World")
 ```
-
-    [1;30;43m스트리밍 출력 내용이 길어서 마지막 5000줄이 삭제되었습니다.[0m
     Hello World
- 
-   
-
+1만번 출력 반복
   
 ```python
 a = "Kaggle"
@@ -1079,7 +1059,6 @@ for index, value in enumerate(alphabets):
     0 A
     1 B
     2 C
-    
 
 
 # 참고용
