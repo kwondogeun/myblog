@@ -5,7 +5,7 @@ tags: phython
 ---
 # visualization
 ### 객체지향 fig,ax 사용하기(많은 데이터를 처리하기 용이)
-
+### 세가지 방법으로 데이터 시각화 가능
 
 ```python
 import matplotlib.pyplot as plt
@@ -23,7 +23,7 @@ ax.plot(dates, max_temperature, label = "Max Temp")
 ax.legend()
 plt.show()
 ```
-
+plot(x,y)의 x,y는 각각 x축과 y축값이 된다.
 
     
 ![output_1_0](/img/output_1_0.png)
@@ -67,45 +67,17 @@ print(axes)
 ## Matplotlib
 
 ### 선 그래프
-
+- 흐름 변화 확인 용도
 #### 방법 1. Pyplot API
-- 코드 변경됨..
+- 코드 변경됨
 - 참조: https://pypi.org/project/fix-yahoo-finance/
 
 
 ```python
 !pip install yfinance --upgrade --no-cache-dir
 ```
-
-    Collecting yfinance
-      Downloading yfinance-0.1.64.tar.gz (26 kB)
-    Requirement already satisfied: pandas>=0.24 in /usr/local/lib/python3.7/dist-packages (from yfinance) (1.1.5)
-    Requirement already satisfied: numpy>=1.15 in /usr/local/lib/python3.7/dist-packages (from yfinance) (1.19.5)
-    Requirement already satisfied: requests>=2.20 in /usr/local/lib/python3.7/dist-packages (from yfinance) (2.23.0)
-    Requirement already satisfied: multitasking>=0.0.7 in /usr/local/lib/python3.7/dist-packages (from yfinance) (0.0.9)
-    Collecting lxml>=4.5.1
-      Downloading lxml-4.6.4-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (6.3 MB)
-    [K     |████████████████████████████████| 6.3 MB 43.0 MB/s 
-    [?25hRequirement already satisfied: python-dateutil>=2.7.3 in /usr/local/lib/python3.7/dist-packages (from pandas>=0.24->yfinance) (2.8.2)
-    Requirement already satisfied: pytz>=2017.2 in /usr/local/lib/python3.7/dist-packages (from pandas>=0.24->yfinance) (2018.9)
-    Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.7/dist-packages (from python-dateutil>=2.7.3->pandas>=0.24->yfinance) (1.15.0)
-    Requirement already satisfied: idna<3,>=2.5 in /usr/local/lib/python3.7/dist-packages (from requests>=2.20->yfinance) (2.10)
-    Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /usr/local/lib/python3.7/dist-packages (from requests>=2.20->yfinance) (1.24.3)
-    Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.7/dist-packages (from requests>=2.20->yfinance) (2021.5.30)
-    Requirement already satisfied: chardet<4,>=3.0.2 in /usr/local/lib/python3.7/dist-packages (from requests>=2.20->yfinance) (3.0.4)
-    Building wheels for collected packages: yfinance
-      Building wheel for yfinance (setup.py) ... [?25l[?25hdone
-      Created wheel for yfinance: filename=yfinance-0.1.64-py2.py3-none-any.whl size=24109 sha256=b867d78e7d6c25ad0a340954b205c93c6fe418097ca0e2f1637d6f694dce639f
-      Stored in directory: /tmp/pip-ephem-wheel-cache-qxr9_zft/wheels/86/fe/9b/a4d3d78796b699e37065e5b6c27b75cff448ddb8b24943c288
-    Successfully built yfinance
-    Installing collected packages: lxml, yfinance
-      Attempting uninstall: lxml
-        Found existing installation: lxml 4.2.6
-        Uninstalling lxml-4.2.6:
-          Successfully uninstalled lxml-4.2.6
-    Successfully installed lxml-4.6.4 yfinance-0.1.64
-    
-
+설치
+   
 
 ```python
 import yfinance as yf
@@ -113,37 +85,10 @@ data = yf.download('AAPL', '2019-08-01', '2020-08-01')
 data.info()
 ```
 
-    [*********************100%***********************]  1 of 1 completed
-    <class 'pandas.core.frame.DataFrame'>
-    DatetimeIndex: 253 entries, 2019-08-01 to 2020-07-31
-    Data columns (total 6 columns):
-     #   Column     Non-Null Count  Dtype  
-    ---  ------     --------------  -----  
-     0   Open       253 non-null    float64
-     1   High       253 non-null    float64
-     2   Low        253 non-null    float64
-     3   Close      253 non-null    float64
-     4   Adj Close  253 non-null    float64
-     5   Volume     253 non-null    int64  
-    dtypes: float64(5), int64(1)
-    memory usage: 13.8 KB
-    
-
-
 ```python
 ts = data['Open']
 print(ts.head())
 ```
-
-    Date
-    2019-08-01    53.474998
-    2019-08-02    51.382500
-    2019-08-05    49.497501
-    2019-08-06    49.077499
-    2019-08-07    48.852501
-    Name: Open, dtype: float64
-    
-
 
 
 #### 방법 2. 객체지향 API
@@ -170,8 +115,10 @@ plt.show()
 
 ### 방법 3. Pyplot API + 객체지향 API
 
-
-
+- ax.set_title("제목")
+- ax.set_xlabel("x축 이름")
+- ax.set_ylabel("y축 이름")
+- as.legend([]) -> 범례
 
 ```python
 import yfinance as yf
@@ -227,7 +174,7 @@ plt.show()
 
 
 ### 막대 그래프
-
+카테고리 별로 수치 비교 확인용
 
 ```python
 import matplotlib.pyplot as plt
@@ -248,22 +195,6 @@ for rect in plot:
 
 plt.show()
 ```
-
-    graph: Rectangle(xy=(0.6, 0), width=0.8, height=300, angle=0)
-    graph: Rectangle(xy=(1.6, 0), width=0.8, height=400, angle=0)
-    graph: Rectangle(xy=(2.6, 0), width=0.8, height=550, angle=0)
-    graph: Rectangle(xy=(3.6, 0), width=0.8, height=900, angle=0)
-    graph: Rectangle(xy=(4.6, 0), width=0.8, height=600, angle=0)
-    graph: Rectangle(xy=(5.6, 0), width=0.8, height=960, angle=0)
-    graph: Rectangle(xy=(6.6, 0), width=0.8, height=900, angle=0)
-    graph: Rectangle(xy=(7.6, 0), width=0.8, height=910, angle=0)
-    graph: Rectangle(xy=(8.6, 0), width=0.8, height=800, angle=0)
-    graph: Rectangle(xy=(9.6, 0), width=0.8, height=700, angle=0)
-    graph: Rectangle(xy=(10.6, 0), width=0.8, height=550, angle=0)
-    graph: Rectangle(xy=(11.6, 0), width=0.8, height=450, angle=0)
-    
-
-
     
 ![output_18_1](/img/output_18_1.png)
     
@@ -272,7 +203,7 @@ plt.show()
 ### 산점도 그래프
 - 두개의 연속형 변수 (키, 몸무게 등)
 - 상관관계 != 인과관계
-
+- 산점도 (Scatter plot)는 두 변수의 상관 관계를 직교 좌표계의 평면에 점으로 표현하는 그래프
 
 
 ```python
@@ -328,7 +259,7 @@ fig.show()
 
 ### 히스토그램
 - 수치형 변수 1개
-
+- 막대그래프와 비슷하지만 구간 지정 그래프화
 
 
 ```python
@@ -359,7 +290,7 @@ fig.show()
 ### 박스플롯
 - x축 변수: 범주형 변수, 그룹과 관련있는 변수, 문자열
 - y축 변수: 수치형 변수 
-
+- 박스형태로 그래프화 하여 최소,최대 구간을 표시하여 박스크기와 위치에 따라 데이터를 분석가능
 
 ```python
 import matplotlib.pyplot as plt
@@ -385,8 +316,6 @@ fig.show()
 
 ### 히트맵
 
-
-
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
@@ -404,24 +333,6 @@ fig.colorbar(im)
 
 fig.show()
 ```
-
-         year month  passengers
-    0    1949   Jan         112
-    1    1949   Feb         118
-    2    1949   Mar         132
-    3    1949   Apr         129
-    4    1949   May         121
-    ..    ...   ...         ...
-    139  1960   Aug         606
-    140  1960   Sep         508
-    141  1960   Oct         461
-    142  1960   Nov         390
-    143  1960   Dec         432
-    
-    [144 rows x 3 columns]
-    
-
-
     
 ![output_28_1](/img/output_28_1.png)
     
@@ -430,7 +341,7 @@ fig.show()
 ## Seaborn
 
 ### 산점도와 회귀선이 있는 산점도
-
+- seaborn 참고 url:https://jjeongil.tistory.com/775
 
 ```python
 %matplotlib inline 
@@ -847,348 +758,9 @@ fig.show()
 ![output_53_0](/img/output_53_0.png)
     
 
-
 ## Intermediate
 
 ### 페가블로그 코드
 - https://jehyunlee.github.io/2020/08/27/Python-DS-28-mpl_spines_grids/
 
-
-```python
-import matplotlib.pyplot as plt
-from matplotlib.ticker import (MultipleLocator, AutoMinorLocator, FuncFormatter)
-import seaborn as sns
-import numpy as np
-```
-
-
-```python
-def plot_example(ax, zorder=0):
-    ax.bar(tips_day["day"], tips_day["tip"], color="lightgray", zorder=zorder)
-    ax.set_title("tip (mean)", fontsize=16, pad=12)
-
-    # Values
-    h_pad = 0.1
-    for i in range(4):
-        fontweight = "normal"
-        color = "k"
-        if i == 3:
-            fontweight = "bold"
-            color = "darkred"
-
-        ax.text(i, tips_day["tip"].loc[i] + h_pad, f"{tips_day['tip'].loc[i]:0.2f}", 
-                horizontalalignment='center', fontsize=12, fontweight=fontweight, color=color)
-
-    # Sunday
-    ax.patches[3].set_facecolor("darkred")
-    ax.patches[3].set_edgecolor("black")
-
-    # set_range
-    ax.set_ylim(0, 4)
-    return ax
-
-def major_formatter(x, pos):
-    return "{%.2f}" % x
-formatter = FuncFormatter(major_formatter)
-
-```
-
-
-```python
-tips = sns.load_dataset("tips")
-tips_day = tips.groupby("day").mean().reset_index()
-print(tips_day)
-```
-
-        day  total_bill       tip      size
-    0  Thur   17.682742  2.771452  2.451613
-    1   Fri   17.151579  2.734737  2.105263
-    2   Sat   20.441379  2.993103  2.517241
-    3   Sun   21.410000  3.255132  2.842105
-    
-
-
-```python
-fig, ax = plt.subplots(figsize=(10, 6))
-ax = plot_example(ax, zorder=2)
-```
-
-
-    
-![output_59_0](/img/output_59_0.png)
-    
-
-
-
-```python
-fig, ax = plt.subplots(figsize=(10, 6))
-ax = plot_example(ax, zorder=2)
-
-ax.spines["top"].set_visible(False)
-ax.spines["right"].set_visible(False)
-ax.spines["left"].set_visible(False)
-```
-
-
-    
-![output_60_0](/img/output_60_0.png)
-    
-
-
-
-```python
-fig, ax = plt.subplots()
-ax = plot_example(ax, zorder=2)
-
-ax.spines["top"].set_visible(False)
-ax.spines["right"].set_visible(False)
-ax.spines["left"].set_visible(False)
-
-ax.yaxis.set_major_locator(MultipleLocator(1))
-ax.yaxis.set_major_formatter(formatter)
-ax.yaxis.set_minor_locator(MultipleLocator(0.5))
-```
-
-
-    
-![output_61_0](/img/output_61_0.png)
-    
-
-
-
-```python
-fig, ax = plt.subplots()
-ax = plot_example(ax, zorder=2)
-
-ax.spines["top"].set_visible(False)
-ax.spines["right"].set_visible(False)
-ax.spines["left"].set_visible(False)
-
-ax.yaxis.set_major_locator(MultipleLocator(1))
-ax.yaxis.set_major_formatter(formatter)
-ax.yaxis.set_minor_locator(MultipleLocator(0.5))
-    
-ax.grid(axis="y", which="major", color="lightgray")
-ax.grid(axis="y", which="minor", ls=":")
-```
-
-
-    
-![output_62_0](/img/output_62_0.png)
-    
-
-
-### 책 코드
-
-
-```python
-import matplotlib.pyplot as plt
-from matplotlib.ticker import (MultipleLocator, AutoMinorLocator, FuncFormatter)
-import seaborn as sns
-import numpy as np
-
-tips = sns.load_dataset("tips")
-fig, ax = plt.subplots(nrows = 1, ncols = 2, figsize=(16, 5))
-
-def major_formatter(x, pos):
-    return "%.2f$" % x
-formatter = FuncFormatter(major_formatter)
-
-# Ideal Bar Graph
-ax0 = sns.barplot(x = "day", y = 'total_bill', data = tips, 
-                  ci=None, color='lightgray', alpha=0.85, zorder=2, 
-                  ax=ax[0])
-```
-
-
-    
-![output_64_0](/img/output_64_0.png)
-    
-
-
-
-```python
-group_mean = tips.groupby(['day'])['total_bill'].agg('mean')
-h_day = group_mean.sort_values(ascending=False).index[0]
-h_mean = np.round(group_mean.sort_values(ascending=False)[0], 2)
-print("The Best Day:", h_day)
-print("The Highest Avg. Total Biil:", h_mean)
-```
-
-    The Best Day: Sun
-    The Highest Avg. Total Biil: 21.41
-    
-
-
-```python
-tips = sns.load_dataset("tips")
-fig, ax = plt.subplots(nrows = 1, ncols = 2, figsize=(16, 5))
-
-# Ideal Bar Graph
-ax0 = sns.barplot(x = "day", y = 'total_bill', data = tips, 
-                  ci=None, color='lightgray', alpha=0.85, zorder=2, 
-                  ax=ax[0])
-
-group_mean = tips.groupby(['day'])['total_bill'].agg('mean')
-h_day = group_mean.sort_values(ascending=False).index[0]
-h_mean = np.round(group_mean.sort_values(ascending=False)[0], 2)
-for p in ax0.patches:
-  fontweight = "normal"
-  color = "k"
-  height = np.round(p.get_height(), 2)
-  if h_mean == height:
-    fontweight="bold"
-    color="darkred"
-    p.set_facecolor(color)
-    p.set_edgecolor("black")
-  ax0.text(p.get_x() + p.get_width()/2., height+1, height, ha = 'center', size=12, fontweight=fontweight, color=color)
-
-fig.show()
-```
-
-
-    
-![output_66_0](/img/output_66_0.png)
-    
-
-
-
-```python
-import matplotlib.pyplot as plt
-from matplotlib.ticker import (MultipleLocator, AutoMinorLocator, FuncFormatter)
-import seaborn as sns
-import numpy as np
-
-tips = sns.load_dataset("tips")
-fig, ax = plt.subplots(nrows = 1, ncols = 2, figsize=(16, 5))
-
-def major_formatter(x, pos):
-    return "%.2f$" % x
-formatter = FuncFormatter(major_formatter)
-
-# Ideal Bar Graph
-ax0 = sns.barplot(x = "day", y = 'total_bill', data = tips, 
-                  ci=None, color='lightgray', alpha=0.85, zorder=2, 
-                  ax=ax[0])
-
-group_mean = tips.groupby(['day'])['total_bill'].agg('mean')
-h_day = group_mean.sort_values(ascending=False).index[0]
-h_mean = np.round(group_mean.sort_values(ascending=False)[0], 2)
-for p in ax0.patches:
-  fontweight = "normal"
-  color = "k"
-  height = np.round(p.get_height(), 2)
-  if h_mean == height:
-    fontweight="bold"
-    color="darkred"
-    p.set_facecolor(color)
-    p.set_edgecolor("black")
-  ax0.text(p.get_x() + p.get_width()/2., height+1, height, ha = 'center', size=12, fontweight=fontweight, color=color)
-
-ax0.set_ylim(-3, 30)
-ax0.set_title("Ideal Bar Graph", size = 16)
-
-ax0.spines['top'].set_visible(False)
-ax0.spines['left'].set_position(("outward", 20))
-ax0.spines['left'].set_visible(False)
-ax0.spines['right'].set_visible(False)
-
-ax0.yaxis.set_major_locator(MultipleLocator(10))
-ax0.yaxis.set_major_formatter(formatter)
-ax0.yaxis.set_minor_locator(MultipleLocator(5))
-
-ax0.set_ylabel("Avg. Total Bill($)", fontsize=14)
-
-ax0.grid(axis="y", which="major", color="lightgray")
-ax0.grid(axis="y", which="minor", ls=":")
-
-fig.show()
-```
-
-
-    
-![output_67_0](/img/output_67_0.png)
-    
-
-
-
-```python
-import matplotlib.pyplot as plt
-from matplotlib.ticker import (MultipleLocator, AutoMinorLocator, FuncFormatter)
-import seaborn as sns
-import numpy as np
-
-tips = sns.load_dataset("tips")
-fig, ax = plt.subplots(nrows = 1, ncols = 2, figsize=(16, 5))
-
-def major_formatter(x, pos):
-    return "%.2f$" % x
-formatter = FuncFormatter(major_formatter)
-
-# Ideal Bar Graph
-ax0 = sns.barplot(x = "day", y = 'total_bill', data = tips, 
-                  ci=None, color='lightgray', alpha=0.85, zorder=2, 
-                  ax=ax[0])
-
-group_mean = tips.groupby(['day'])['total_bill'].agg('mean')
-h_day = group_mean.sort_values(ascending=False).index[0]
-h_mean = np.round(group_mean.sort_values(ascending=False)[0], 2)
-for p in ax0.patches:
-  fontweight = "normal"
-  color = "k"
-  height = np.round(p.get_height(), 2)
-  if h_mean == height:
-    fontweight="bold"
-    color="darkred"
-    p.set_facecolor(color)
-    p.set_edgecolor("black")
-  ax0.text(p.get_x() + p.get_width()/2., height+1, height, ha = 'center', size=12, fontweight=fontweight, color=color)
-
-ax0.set_ylim(-3, 30)
-ax0.set_title("Ideal Bar Graph", size = 16)
-
-ax0.spines['top'].set_visible(False)
-ax0.spines['left'].set_position(("outward", 20))
-ax0.spines['left'].set_visible(False)
-ax0.spines['right'].set_visible(False)
-
-ax0.yaxis.set_major_locator(MultipleLocator(10))
-ax0.yaxis.set_major_formatter(formatter)
-ax0.yaxis.set_minor_locator(MultipleLocator(5))
-
-ax0.set_ylabel("Avg. Total Bill($)", fontsize=14)
-
-ax0.grid(axis="y", which="major", color="lightgray")
-ax0.grid(axis="y", which="minor", ls=":")
-
-ax0.set_xlabel("Weekday", fontsize=14)
-for xtick in ax0.get_xticklabels():
-  print(xtick)
-  if xtick.get_text() == h_day:
-    xtick.set_color("darkred")
-    xtick.set_fontweight("demibold")
-ax0.set_xticklabels(['Thursday', 'Friday', 'Saturday', 'Sunday'], size=12)
-
-ax1 = sns.barplot(x = "day", y = 'total_bill', data = tips, 
-                  ci=None, alpha=0.85, 
-                  ax=ax[1])
-for p in ax1.patches:
-  height = np.round(p.get_height(), 2)
-  ax1.text(p.get_x() + p.get_width()/2., height+1, height, ha = 'center', size=12)
-ax1.set_ylim(-3, 30)
-ax1.set_title("Just Bar Graph")
-
-plt.show()
-```
-
-    Text(0, 0, 'Thur')
-    Text(0, 0, 'Fri')
-    Text(0, 0, 'Sat')
-    Text(0, 0, 'Sun')
-    
-
-
-    
-![output_68_1](/img/output_68_1.png)
-    
 
