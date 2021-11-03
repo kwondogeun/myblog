@@ -68,6 +68,7 @@ print(axes)
 
 ### 선 그래프
 - 흐름 변화 확인 용도
+
 #### 방법 1. Pyplot API
 - 코드 변경됨
 - 참조: https://pypi.org/project/fix-yahoo-finance/
