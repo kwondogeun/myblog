@@ -526,7 +526,7 @@ plt.show()
 
 
     
-![output_45_0](output_45_0.png)
+![output_45_0](/img/output_45_0.png)
     
 
 
