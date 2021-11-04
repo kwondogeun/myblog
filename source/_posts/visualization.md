@@ -26,7 +26,7 @@ plt.show()
 plot(x,y)의 x,y는 각각 x축과 y축값이 된다.
 
     
-![output_1_0](/img/output_1_0.png)
+![output_1_0](/img/goutput_1_0.png)
     
 
 
@@ -50,7 +50,7 @@ plt.show()
 
 
     
-![output_2_0](/img/output_2_0.png)
+![output_2_0](/img/goutput_2_0.png)
     
 
 
@@ -142,7 +142,7 @@ plt.show()
 
 
     
-![output_15_1](/img/output_15_1.png)
+![output_15_1](/img/goutput_15_1.png)
     
 
 
@@ -170,7 +170,7 @@ plt.show()
 
 
     
-![output_16_1](/img/output_16_1.png)
+![output_16_1](/img/goutput_16_1.png)
     
 
 
@@ -197,7 +197,7 @@ for rect in plot:
 plt.show()
 ```
     
-![output_18_1](/img/output_18_1.png)
+![output_18_1](/img/goutput_18_1.png)
     
 
 
@@ -227,7 +227,7 @@ fig.show()
 
 
     
-![output_20_0](/img/output_20_0.png)
+![output_20_0](/img/goutput_20_0.png)
     
 
 
@@ -254,7 +254,7 @@ fig.show()
 
 
     
-![output_22_0](/img/output_22_0.png)
+![output_22_0](/img/goutput_22_0.png)
     
 
 
@@ -284,7 +284,7 @@ fig.show()
 
 
     
-![output_24_0](/img/output_24_0.png)
+![output_24_0](/img/goutput_24_0.png)
     
 
 
@@ -311,7 +311,7 @@ fig.show()
 
 
     
-![output_26_0](/img/output_26_0.png)
+![output_26_0](/img/goutput_26_0.png)
     
 
 
@@ -335,7 +335,7 @@ fig.colorbar(im)
 fig.show()
 ```
     
-![output_28_1](/img/output_28_1.png)
+![output_28_1](/img/goutput_28_1.png)
     
 
 
@@ -357,7 +357,7 @@ plt.show()
 
 
     
-![output_31_0](/img/output_31_0.png)
+![output_31_0](/img/goutput_31_0.png)
     
 
 
@@ -381,7 +381,7 @@ plt.show()
 
 
     
-![output_32_0](/img/output_32_0.png)
+![output_32_0](/img/goutput_32_0.png)
     
 
 
@@ -402,7 +402,7 @@ plt.show()
 
 
     
-![output_34_0](/img/output_34_0.png)
+![output_34_0](/img/goutput_34_0.png)
     
 
 
@@ -418,7 +418,7 @@ plt.show()
 
 
     
-![output_35_0](/img/output_35_0.png)
+![output_35_0](/img/goutput_35_0.png)
     
 
 
@@ -430,7 +430,7 @@ plt.show()
 
 
     
-![output_36_0](/img/output_36_0.png)
+![output_36_0](/img/goutput_36_0.png)
     
 
 
@@ -445,7 +445,7 @@ plt.show()
 
 
     
-![output_38_0](/img/output_38_0.png)
+![output_38_0](/img/goutput_38_0.png)
     
 
 
@@ -459,7 +459,7 @@ plt.show()
 
 
     
-![output_40_0](/img/output_40_0.png)
+![output_40_0](/img/goutput_40_0.png)
     
 
 
@@ -508,7 +508,7 @@ plt.show()
 
 
     
-![output_44_0](/img/output_44_0.png)
+![output_44_0](/img/goutput_44_0.png)
     
 
 
@@ -526,7 +526,7 @@ plt.show()
 
 
     
-![output_45_0](/img/output_45_0.png)
+![output_45_0](/img/goutput_45_0.png)
     
 
 
@@ -700,7 +700,7 @@ plt.show()
 
 
     
-![output_50_0](/img/output_50_0.png)
+![output_50_0](/img/goutput_50_0.png)
     
 
 
@@ -756,7 +756,7 @@ fig.show()
 
 
     
-![output_53_0](/img/output_53_0.png)
+![output_53_0](/img/goutput_53_0.png)
     
 
 ## Intermediate
