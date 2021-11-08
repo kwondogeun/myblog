@@ -40,3 +40,8 @@ fig.update_layout(title_text='Formal Education attained or plan to attain in nex
 fig.show()
 ```
 ![pie](/img/pie.PNG)
+
+## Reference Pie
+
+URL:https://plotly.com/python/reference/pie/
+URL:https://github.com/plotly/plotly.py/blob/master/doc/python/pie-charts.md
