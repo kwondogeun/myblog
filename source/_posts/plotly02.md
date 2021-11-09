@@ -3,6 +3,7 @@ title: plotly02
 date: 2021-11-09 10:13:17
 tags: phython
 ---
+필사
 ```python
 import numpy as np
 import pandas as pd
@@ -64,3 +65,4 @@ fig.show()
 
 ### REFERENCE
 https://plotly.com/python-api-reference/index.html
+
