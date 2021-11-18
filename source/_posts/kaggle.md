@@ -33,7 +33,21 @@ kaggle-survey-2021
        - 중국은 남성이 80% 여성이 14%
        - 과거와 현재에도 미미한 차이를 보이고 있음
    - Q7 What programming languages do you use on a regular basis?
+       - 일본과 중국에서 주로 사용하는 언어는 ‘Python’
+       - 전체 언어 비율 중 대부분을 차지
+       - 일본은 ‘2019년’에는 전체 언어 중 ‘Python’이 약 ‘39%’를 차지
+       - 중국은 ‘2019년’에는 전체 언어 중 ‘Python’이 약 ‘40%’를 차지
+       - 일본은 ‘2021년’에는 전체 언어 중 ‘Python’이 약 ‘38%’를 차지
+       - 중국은 ‘2021년’에는 전체 언어 중 ‘Python’이 약 ‘51%’를 차지
+       - 일본은 과거보다 현재 차지 비율이 약 ‘1%’ 감소
+       - 중국은 과거보다 현재 차지 비율이 약 ‘11%’나 증가
    - Q9 Which of the following integrated development environments (IDE's) do you use on a regular basis? (Select all that apply)
+       - 일본과 중국이 서로 다른 성향을 보임
+       - 일본은 ‘2019년’ ‘주피터’와 ‘비주얼(VS)’를 주로 사용
+       - 중국은 ‘2019년’ ‘주피터’,‘파이참’,‘비주얼(VS)’을 주로 사용
+       - 일본은 과거와 비교해 사용 비율이 미미하지만 각 각 ‘6%’,‘4%’ 증가
+       - 중국은 과거와 비교해 사용 비율이
+       - 각 각 파이참이 ‘3%’(증가), 주피터 ‘2%’(증가), 비주얼 ‘11%’(증가)
 
    - Q14 What data visualization libraries or tools do you use on a regular basis? (Select all that apply)
        - Matplotlib와 Seaborn의 숫자가 급격하게 늘어남
