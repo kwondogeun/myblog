@@ -58,3 +58,5 @@ kaggle-survey-2021
    - 동아시아에서 캐글러들의 크게 나타나는 특징
    - 향후 동아시아 미래의 캐글러들의 비전과 트렌드 예측
 
+캐글 작성본
+https://www.kaggle.com/kwdoku145/the-latest-trends-in-east-asia-japan-and-china
